@@ -10,12 +10,13 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-top:50px ;
 }
 
 .board {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, clamp(50px,100px,150px));
+  grid-template-rows: repeat(3, clamp(50px,100px,150px));
 }
 
 .cell {
